@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <title>Letsupgrade</title>
+  <body>
+    <h1>Print an array in reverse order </h1>
+    <button onclick="myFunction()">Click to reverse</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script >
+    	var items=["a","b","c","d"];
+      document.getElementById("demo").innerHTML = `Array is : ${items}`;
+      function myFunction()
+      {
+        document.getElementById("demo1").innerHTML = items.reverse();
+      }
+
+      //using for loop
+      var i;
+      for(i=items.length-1;i>=0;i--)
+      {
+        document.write(items[i])
+      }
+
+    </script>
+  </body>
+</html>
+ 

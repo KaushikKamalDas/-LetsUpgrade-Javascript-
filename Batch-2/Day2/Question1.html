@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Program to search for a particular character in a string </h1>
+<button onclick="myFunction1()">enter the string</button>
+<button onclick="myFunction()">search</button>
+<p id="demo1"></p>
+<p id="demo"></p>
+
+<script>
+
+  let userinput;
+    function myFunction1() 
+    {
+      userinput = prompt("Please enter your string");
+      if (userinput != null)
+      {
+        document.getElementById("demo1").innerHTML =`Your string is ${userinput}`;
+      }
+    }
+    function myFunction() 
+    {
+    	console.log(userinput);
+      var usersearch = prompt("Please enter your search character");
+      if (usersearch != null) 
+      {
+        var pos = userinput.search(usersearch);
+      	if (pos!=-1)
+        {
+          document.getElementById("demo").innerHTML =`found at ${pos+1}`;
+        }
+        else
+        document.getElementById("demo").innerHTML ="Not found";
+      }
+    }
+
+</script>
+
+</body>
+</html>

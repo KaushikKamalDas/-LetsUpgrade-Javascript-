@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <title>Letsupgrade</title>
+  <body>
+    <h1>Program to search for a element in a array of strings </h1>
+    <p>**Case sensitive</p>
+    <button onclick="myFunction()">search click here</button>
+    <p id="demo"></p>
+    <script >
+      
+    	let fruits = ["Banana", "Orange", "Apple", "Mango"];
+      var x;
+      document.write("My array is :<br>")
+        for(x of fruits)
+        {
+          document.write(x + "<br >");
+        } 
+        function myFunction() 
+        {
+          var user_search_value=prompt("enter the search value");
+          if(user_search_value != null)
+          {
+            var a= fruits.indexOf(user_search_value)
+              if (a!=-1)
+                document.getElementById("demo").innerHTML =`${user_search_value} Found at position ${a+1}`;
+              else
+                document.getElementById("demo").innerHTML =`Not found`;
+          }
+        }
+      
+    </script>
+  </body>
+</html>

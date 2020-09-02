@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <title>Letsupgrade</title>
+  <body>
+    <h1>Program to display only elements containing 'a' in them from a array </h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script >
+    	var items =["red","blue","ram","rat","ratan"];
+      var aitems=[];
+      document.getElementById("demo").innerHTML =`My array is : ${items}`;
+      var i;
+      for(i=0;i<items.length;i++)
+      {
+        if(items[i].search('a')!=-1)
+          {
+            aitems.push(items[i]); 
+          }
+      }
+      document.getElementById("demo1").innerHTML =`elements containing 'a' are : ${aitems}`;
+
+    </script>
+  </body>
+</html>

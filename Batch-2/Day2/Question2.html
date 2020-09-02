@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <title>Letsupgrade</title>
+  <body>
+  	<h1>Program to convert minutes to seconds </h1>
+  	<p><input id="demo" > minutes</p>
+  	<button onclick="myFunction()">Convert</button>
+  	<p id="demo1"></p>
+    <script >
+    	function myFunction(){
+    		var sec=document.getElementById("demo").value * 60;
+    		document.getElementById("demo1").innerHTML=`<h1>${sec} sec </h1>`;
+    	}
+    </script>
+  </body>
+</html>
