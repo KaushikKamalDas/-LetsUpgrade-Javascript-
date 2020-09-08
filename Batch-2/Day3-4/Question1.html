@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment2</title>
+    <style type="text/css">
+    img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+    .button {
+  background-color: #4CAF50; 
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+    
+    </style> 
+  </head>
+  <body>
+    <img
+      src="img/mm-1.jpg"
+      id="image"
+      style="width:40%"
+    />
+    <div class="center">
+    <button class="button button1" onclick="currentImage1()">Button1</button>
+    <button class="button button2" onclick="changeImage2()">Button2</button>
+    <button class="button button3" onclick="changeImage3()">Button3</button>
+    </div>
+    <script src="scripts/object1.js"></script>
+  </body>
+</html>
