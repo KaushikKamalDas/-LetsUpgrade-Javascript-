@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment_3_Q2</title>
+    <link rel="stylesheet" type="text/css" href="Scripts/question2.css">
+  </head>
+  <body>
+    <div class="modal" onclick="hideModal(event)">
+      <div class="modalchild">
+        <div class="form">
+          <form onsubmit="updateSuperbus(event)">
+            <input type="text" required placeholder="Name" id="upname" />
+            <input type="number" required placeholder="Number" id="upnumber" />
+            <input type="number" required placeholder="Number of Passengers" id="uppassenger" />
+            <input type="text" required placeholder="Source" id="upsource" />
+            <input type="text" required placeholder="Destination" id="updestination" />
+            <button style type="submit">Update Superbus</button>
+          </form>
+        </div>
+      </div>
+    </div>
+       
+    <div class="data">
+      <div id="container">
+        <h1 style="text-align: center;">SUPERBUSES</h1>
+      </div>
+      <div class="form">
+        <form onsubmit="addSuperbus(event)">
+          <input type="text" required placeholder="Name" id="name" />
+          <input type="number" required placeholder="Number" id="number" />
+          <input type="number" required placeholder="No. of Passengers" id="passenger" />
+          <input type="text" required placeholder="Source" id="source" />
+          <input type="text" required placeholder="Destination" id="destination" />
+          <button type="submit">Add Superbus</button>
+        </form>
+      </div>
+
+      <div class="form">
+        <input
+          type="text"
+          style="width: 50%"
+          placeholder="Start Searching here by entering source or destination"
+          id="searchName"
+          onkeyup="searchBySourceOrDestination()"
+        />
+      </div>
+
+      <table border="1" class="table" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Sr no</th>
+            <th>Name</th>
+            <th>Number</th>
+            <th>Passengers</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody class="tdata" id="tdata"></tbody>
+      </table>
+    </div>
+
+    <script src="Scripts/question2.js"></script>
+  </body>
+</html>

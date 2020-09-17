@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="Scripts/question1.css">
+  </head>
+  <body>
+    
+    <div class="data">
+      <h1 style="text-align: center;" id="myDIV"><b>SUPEREMPLOYEES</b></h1>
+      <div class="form">
+        <input
+          type="text"
+          placeholder="Start Searching by name or city"
+          id="searchName"
+          onkeyup="searchByNameOrCity()"
+        />
+      </div>
+
+      <table border="1" class="table" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Sr.no</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Salary</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody class="tdata" id="tdata"></tbody>
+      </table>
+    </div>
+
+    <script src="Scripts/question1.js"></script>
+  </body>
+</html>
